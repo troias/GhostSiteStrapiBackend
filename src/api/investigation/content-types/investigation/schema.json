@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "investigations",
+  "info": {
+    "singularName": "investigation",
+    "pluralName": "investigations",
+    "displayName": "investigation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "investigations"
+    },
+    "name": {
+      "type": "string"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "media": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category",
+      "mappedBy": "investigation"
+    }
+  }
+}
