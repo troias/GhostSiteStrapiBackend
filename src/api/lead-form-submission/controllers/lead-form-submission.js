@@ -1,47 +1,97 @@
 'use strict';
+const bodyParser = require('koa-bodyparser');
+
 
 /**
  *  lead-form-submission controller
  */
 
+// add user from request to strapi model
+// get id then add id to lead-form-submission
+
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::lead-form-submission.lead-form-submission');
+module.exports = createCoreController('api::lead-form-submission.lead-form-submission', () => (
+    {
 
 
-// , ({ }) => {
-//     return {
-        
-//         async create(ctx) {
-//             const {
-//                 name,
-//                 reason,
-//                 message,
-//                 file
-//             } = ctx.request.body;
-//             const formData = new FormData();
-//             formData.append('name', name);
-//             formData.append('reason', reason);
-//             formData.append('info', message);
-//             formData.append('media', file);
-//             const response = await fetch('https://localhost:1337api/lead-form-submissions', {
-//                 method: 'POST',
-//                 body: formData
-//             });
-//             const data = await response.json();
-//             if (data.success) {
-//                 ctx.response.status = 200;
-//                 ctx.response.body = {
-//                     message: 'Your message has been sent successfully'
-//                 };
-//             } else {
-//                 ctx.response.status = 400;
-//                 ctx.response.body = {
-//                     message: 'Something went wrong'
-//                 };
-//             }
-//         }
-        
-// }  
+    async create(ctx) {
+
     
-// }
+
+
+        const { data } = ctx.request.body;
+        const files = ctx.request.files;
+
+        console.log("user", ctx.user);
+      
+        console.log("user3", ctx.state.user)
+      
+     
+
+        console.log("files", files);
+       
+      
+       
+
+
+
+        const parsedData = JSON.parse(data);
+       
+        
+
+        console.log("parsedData", parsedData)
+
+        console.log("files", files['files.media']);
+
+    
+
+        
+
+        const leadFormSubmission = await strapi.query('api::lead-form-submission.lead-form-submission').create({
+           data: {
+       
+           ...parsedData,
+
+            },
+            files: {
+                media: files['files.media'],
+
+           }
+  
+
+         
+        
+
+
+         
+
+          
+        });
+
+        if (ctx.request.is('multipart/form-data')) {
+
+            
+        }
+     
+        return leadFormSubmission;
+    
+       
+
+
+
+
+    }
+        }
+        
+        )
+   
+)
+
+
+
+
+
+
+// Language: javascript
+// Path: my-project/backend/src/api/lead-form-submission/controllers/lead-form-submission.js
