@@ -4,7 +4,8 @@
   "info": {
     "singularName": "investigation",
     "pluralName": "investigations",
-    "displayName": "investigation"
+    "displayName": "investigation",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -24,20 +25,21 @@
       "type": "richtext"
     },
     "media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     },
-    "categories": {
+    "category": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToOne",
       "target": "api::category.category",
-      "mappedBy": "investigation"
+      "inversedBy": "investigations"
     }
   }
 }

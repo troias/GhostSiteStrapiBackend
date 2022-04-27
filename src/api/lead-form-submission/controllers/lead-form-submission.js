@@ -9,89 +9,36 @@ const bodyParser = require('koa-bodyparser');
 // add user from request to strapi model
 // get id then add id to lead-form-submission
 
+
+
 const { createCoreController } = require('@strapi/strapi').factories;
 
-module.exports = createCoreController('api::lead-form-submission.lead-form-submission', () => (
-    {
-
-
+module.exports = createCoreController('api::lead-form-submission.lead-form-submission', () => ( {
     async create(ctx) {
-
-    
-
-
-        const { data } = ctx.request.body;
+        const {data} = ctx.request.body;
         const files = ctx.request.files;
 
-        console.log("user", ctx.user);
-      
-        console.log("user3", ctx.state.user)
-      
-     
+        const parsedData = JSON.parse(data)
 
-        console.log("files", files);
-       
-      
-       
-
-
-
-        const parsedData = JSON.parse(data);
-       
-        
-
-        console.log("parsedData", parsedData)
-
-        console.log("files", files['files.media']);
-
-    
-
-        
-
-        const leadFormSubmission = await strapi.query('api::lead-form-submission.lead-form-submission').create({
-           data: {
-       
-           ...parsedData,
-
+        const entry = await strapi.entityService.create('api::lead-form-submission.lead-form-submission', {
+            data: {
+                ...parsedData,
+               
+              
             },
             files: {
-                media: files['files.media'],
-
-           }
-  
-
-         
-        
-
-
-         
-
-          
-        });
-
-        if (ctx.request.is('multipart/form-data')) {
-
+                file: files['files.media']
+            }
             
+           
         }
-     
-        return leadFormSubmission;
-    
-       
+        );
 
 
-
-
+        ctx.send(entry);
+        return entry;
     }
-        }
-        
-        )
-   
-)
+
+}));
 
 
-
-
-
-
-// Language: javascript
-// Path: my-project/backend/src/api/lead-form-submission/controllers/lead-form-submission.js
