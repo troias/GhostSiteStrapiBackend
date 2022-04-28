@@ -24,9 +24,9 @@
     "info": {
       "type": "richtext"
     },
-    "media": {
+    "image": {
       "type": "media",
-      "multiple": true,
+      "multiple": false,
       "required": false,
       "allowedTypes": [
         "images",
@@ -40,6 +40,13 @@
       "relation": "manyToOne",
       "target": "api::category.category",
       "inversedBy": "investigations"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name"
+    },
+    "title": {
+      "type": "string"
     }
   }
 }
