@@ -27,7 +27,7 @@
     },
     "about": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "sections.about-us"
     }
   }

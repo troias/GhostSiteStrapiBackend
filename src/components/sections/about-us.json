@@ -2,12 +2,22 @@
   "collectionName": "components_sections_about_uses",
   "info": {
     "displayName": "about-us",
-    "icon": "info"
+    "icon": "info",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "title": {
       "type": "string"
+    },
+    "info": {
+      "type": "richtext"
+    },
+    "social_links": {
+      "displayName": "social_links",
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.social-links"
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_footers",
+  "info": {
+    "displayName": "footer",
+    "icon": "anchor",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "message": {
+      "type": "string"
+    },
+    "footer_social_links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.social-links"
+    },
+    "copyright_text": {
+      "type": "string"
+    }
+  }
+}
