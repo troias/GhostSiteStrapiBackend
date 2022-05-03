@@ -33,27 +33,28 @@
     },
     "hero": {
       "title": "The Nobodies", 
-      "heroImage": null
+      "heroImage": null, 
+      "info": "The Nobodies investigates super natural."
     }, 
     "about": {
       "title": "About",
-      "description": "The Nobodies investigates super natural."
+      "info": "The Nobodies investigates super natural.  "
     },
     "social_links": [
       {
-        "name": "facebook",
+        "title": "facebook",
         "url": "https://www.facebook.com/thenobodies"
       },
       {
-        "name": "twitter",
+        "title": "twitter",
         "url": "https://twitter.com/thenobodies"
       },
       {
-        "name": "instagram",
+        "title": "instagram",
         "url": "https://www.instagram.com/thenobodies"
       },
       {
-        "name": "youtube",
+        "title": "youtube",
         "url": "https://www.youtube.com/channel/UC-lQyjWZRXdNk-qXDpY_uQQ"
       }
     
