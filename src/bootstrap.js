@@ -10,6 +10,7 @@ const {
   writers,
   articles,
   global,
+  investigations,
 } = require("../data/data.json");
 
 async function isFirstRun() {
@@ -161,6 +162,26 @@ async function importArticles() {
   );
 }
 
+async function importInvestigations() {
+  return Promise.all(
+    investigations.map((investigation) => {
+      const files = {
+        image: getFileData(`${investigation.slug}.webp`),
+      };
+
+      return createEntry({
+        model: "investigation",
+        entry: {
+          ...investigation,
+          // Make sure it's not a draft
+          publishedAt: Date.now(),
+        },
+        files,
+      });
+    })
+  );
+}
+
 async function importGlobal() {
   const files = {
     favicon: getFileData("favicon.png"),
@@ -168,6 +189,9 @@ async function importGlobal() {
   };
   return createEntry({ model: "global", entry: global, files });
 }
+
+
+
 
 async function importSeedData() {
   // Allow read of application content types
@@ -177,14 +201,17 @@ async function importSeedData() {
     article: ["find", "findOne"],
     category: ["find", "findOne"],
     writer: ["find", "findOne"],
+    investigation: ["find", "findOne"],
   });
 
   // Create all entries
+
   await importCategories();
   await importHomepage();
   await importWriters();
   await importArticles();
   await importGlobal();
+  await importInvestigations();
 }
 
 module.exports = async () => {
