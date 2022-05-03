@@ -5,11 +5,11 @@
       "slug": "paranormal-attachments"
     },
     {
-      "name": "Pemon possession",
+      "name": "Demon possession",
       "slug": "demon-possession"
     },
     {
-      "name": "starting-up-your-own-paranormal-investigating-team",
+      "name": "Starting up your own-paranormal investigating team",
       "slug": "starting-up-your-own-paranormal-investigating-team"
     },
     {
@@ -21,7 +21,7 @@
       "slug": "Life-after-death"
     }, 
     {
-      "investigations": "Investigations",
+      "name": "Investigations",
       "slug": "investigations"
     }
   ],
@@ -32,18 +32,42 @@
       "shareImage": null
     },
     "hero": {
-      "title": "The Nobodies"
-    }
+      "title": "The Nobodies", 
+      "heroImage": null
+    }, 
+    "about": {
+      "title": "About",
+      "description": "The Nobodies investigates super natural."
+    },
+    "social_links": [
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/thenobodies"
+      },
+      {
+        "name": "twitter",
+        "url": "https://twitter.com/thenobodies"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/thenobodies"
+      },
+      {
+        "name": "youtube",
+        "url": "https://www.youtube.com/channel/UC-lQyjWZRXdNk-qXDpY_uQQ"
+      }
+    
+    ]
   },
   "writers": [
     {
-      "name": "Robert Sullivan",
-      "email": "RobS@gmail.com",
+      "name": "Robert S",
+      "email": "robs@gmail.com",
       "picture": null
     },
     {
-      "name": "Marlene Baker",
-      "email": "Marlene@gmail.com",
+      "name": "Marlene",
+      "email": "marlene@gmail.com",
       "picture": null
     }
   ],
@@ -51,7 +75,7 @@
     {
       "title": "Evidence of Life after death? ",
       "content": "One of lifes biggest mysteries is the existence of life after death. Its a controversial subject for many and a huge challenge for researchers and scientist alike. Why is proof of life after death so difficult to obtain? And what qualifies as proof? The idea that a part of us still lives on after we have died is a comforting one to many people",
-      "slug": "Evidence-of-Life-after-death",
+      "slug": "evidence-of-life-after-death",
       "category": {
         "id": 5
       },
@@ -97,7 +121,7 @@
       "author": {
         "id": 2
       },
-      "description": "How a bug on MySQL is becoming a meme on the internet",
+      "description": "The general consensus surrounding the phenomena of demon possession appears to differ over a broad range of cultures",
       "image": null
     },
     {
@@ -119,7 +143,7 @@
     {
       "name": "The Nobodies",
       "info": "The Nobodies investigates super natural.",
-      "slug": "The-Nobodies",
+      "slug": "the-nobodies",
       "image": null, 
       "title": "The Nobodies",
       "category": {
@@ -157,7 +181,7 @@
           "url": "https://www.instagram.com/thenobodies/"
         }
       ],
-      "copyright_text": "© 2022 TheNobodies. All rights reserved.",
+      "copyright_text": "©2022 TheNobodies. All rights reserved.",
     "favicon": null
 
   }

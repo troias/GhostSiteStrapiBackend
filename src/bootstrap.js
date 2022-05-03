@@ -123,6 +123,7 @@ async function importCategories() {
 async function importHomepage() {
   const files = {
     "seo.shareImage": getFileData("default-image.png"),
+    "hero.heroImage": getFileData("hero-image.jpg"),
   };
   await createEntry({ model: "homepage", entry: homepage, files });
 }
