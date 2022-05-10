@@ -22,15 +22,12 @@ module.exports = createCoreController('api::lead-form-submission.lead-form-submi
 
         const entry = await strapi.entityService.create('api::lead-form-submission.lead-form-submission', {
             data: {
-                ...parsedData,
-               
-              
+                ...parsedData, 
             },
             files: {
                 file: files['files.media']
             }
             
-           
         }
         );
 
