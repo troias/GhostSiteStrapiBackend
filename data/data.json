@@ -165,20 +165,20 @@
       "message": "The Nobodies investigates super natural.",
       "footer_social_links": [
         {
-          "name": "Facebook",
+          "title": "Facebook",
           "url": "https://www.facebook.com/The-Nobodies-105799590781296/"
         },
         {
-          "name": "Twitter",
+          "title": "Twitter",
           "url": "https://twitter.com/TheNobodies"
         },
     
         {
-          "name": "Youtube",
+          "title": "Youtube",
           "url": "https://www.youtube.com/channel/UC-_5-ZJXZzQX7XZq-_XKZdQ"
         },
         {
-          "name": "Instagram",
+          "title": "Instagram",
           "url": "https://www.instagram.com/thenobodies/"
         }
       ],
