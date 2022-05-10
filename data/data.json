@@ -38,27 +38,28 @@
     }, 
     "about": {
       "title": "About",
-      "info": "The Nobodies investigates super natural.  "
-    },
-    "social_links": [
-      {
-        "title": "facebook",
-        "url": "https://www.facebook.com/thenobodies"
-      },
-      {
-        "title": "twitter",
-        "url": "https://twitter.com/thenobodies"
-      },
-      {
-        "title": "instagram",
-        "url": "https://www.instagram.com/thenobodies"
-      },
-      {
-        "title": "youtube",
-        "url": "https://www.youtube.com/channel/UC-lQyjWZRXdNk-qXDpY_uQQ"
-      }
-    
-    ]
+      "info": "The Nobodies investigates super natural.  ", 
+      "social_links": [
+        {
+          "title": "facebook",
+          "url": "https://www.facebook.com/thenobodies/"
+        },
+        {
+          "title": "twitter",
+          "url": "https://twitter.com/thenobodies/"
+        },
+        {
+          "title": "instagram",
+          "url": "https://www.instagram.com/thenobodies/"
+        },
+        {
+          "title": "youtube",
+          "url": "https://www.youtube.com/channel/UC-lQyjWZRXdNk-qXDpY_uQQ/"
+        }
+      
+      ]
+    }
+  
   },
   "writers": [
     {
