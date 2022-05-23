@@ -51,6 +51,13 @@
       "relation": "manyToOne",
       "target": "api::writer.writer",
       "inversedBy": "articles"
+    },
+    "featured": {
+      "type": "enumeration",
+      "enum": [
+        "featured",
+        "notFeatured"
+      ]
     }
   }
 }
