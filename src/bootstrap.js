@@ -187,6 +187,7 @@ async function importGlobal() {
   const files = {
     favicon: getFileData("favicon.png"),
     "defaultSeo.shareImage": getFileData("default-image.png"),
+    logo: getFileData("TheNobodiesLogo.svg"),
   };
   return createEntry({ model: "global", entry: global, files });
 }
