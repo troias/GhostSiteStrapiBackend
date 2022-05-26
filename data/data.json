@@ -41,6 +41,10 @@
       "info": "The Nobodies investigates super natural.  ", 
       "social_links": [
         {
+          "title": "instagram",
+          "url": "https://www.instagram.com/thenobodies/"
+        },
+        {
           "title": "facebook",
           "url": "https://www.facebook.com/thenobodies/"
         },
@@ -49,12 +53,12 @@
           "url": "https://twitter.com/thenobodies/"
         },
         {
-          "title": "instagram",
-          "url": "https://www.instagram.com/thenobodies/"
-        },
-        {
           "title": "youtube",
           "url": "https://www.youtube.com/channel/UC-lQyjWZRXdNk-qXDpY_uQQ/"
+        }, 
+        {
+          "title": "messenger",
+          "url": "https://www.messenger.com/t/108782531775548"
         }
       
       ]
@@ -173,15 +177,20 @@
           "title": "Twitter",
           "url": "https://twitter.com/TheNobodies"
         },
-    
+        {
+          "title": "Instagram",
+          "url": "https://www.instagram.com/thenobodies/"
+        },
         {
           "title": "Youtube",
           "url": "https://www.youtube.com/channel/UC-_5-ZJXZzQX7XZq-_XKZdQ"
         },
+    
         {
-          "title": "Instagram",
-          "url": "https://www.instagram.com/thenobodies/"
+          "title": "Messenger",
+          "url": "https://www.messenger.com/t/108782531775548"
         }
+        
       ],
       "copyright_text": "©2022 TheNobodies. All rights reserved.",
     "favicon": null
