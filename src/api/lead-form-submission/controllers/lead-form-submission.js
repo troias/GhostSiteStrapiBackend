@@ -25,7 +25,7 @@ module.exports = createCoreController('api::lead-form-submission.lead-form-submi
                 ...parsedData, 
             },
             files: {
-                file: files['files.media']
+                media: files['files.media']
             }
             
         }

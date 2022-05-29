@@ -4,7 +4,8 @@
   "info": {
     "singularName": "annon-leadform-submission",
     "pluralName": "annon-leadform-submissions",
-    "displayName": "annon-leadform-submission"
+    "displayName": "annon-leadform-submission",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -20,7 +21,7 @@
     "reason": {
       "type": "string"
     },
-    "file": {
+    "media": {
       "allowedTypes": [
         "images",
         "files",

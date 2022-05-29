@@ -35,16 +35,15 @@
     "reason": {
       "type": "string"
     },
-    "file": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
+    "media": {
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ]
+      ],
+      "type": "media",
+      "multiple": true
     }
   }
 }
